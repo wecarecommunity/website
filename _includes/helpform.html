@@ -4,7 +4,7 @@
         <p class="control has-icons-left">
           <input class="input" type="text" name="name" placeholder="First Last Name">
           <span class="icon is-small is-left">
-            <i class="fas fa-person"></i>
+            <i class="fas fa-people-carry"></i>
           </span>
         </p>
       </div>
@@ -20,17 +20,35 @@
       </span>
     </p>
   </div>
+  <div class="field is-horizontal">
+    <div class="field-label"></div>
+    <div class="field-body">
+      <div class="field is-expanded">
+        <div class="field has-addons">
+          <p class="control">
+            <a class="button is-static">
+              +1
+            </a>
+          </p>
+          <p class="control is-expanded">
+            <input class="input" type="tel" name="mobile" placeholder="Your phone number">
+          </p>
+        </div>
+        <p class="help">Please provide you phone number</p>
+      </div>
+    </div>
+  </div>
    <div class="field">
         <p class="control has-icons-left">
         <span class="select">
-            <select name="objective">
+            <select name="objective[]">
             <option selected>Objective</option>
             <option>Need Help</option>
             <option>Can Help</option>
             </select>
         </span>
         <span class="icon is-small is-left">
-            <i class="fas fa-globe"></i>
+            <i class="fas fa-bullseye"></i>
         </span>
         </p>
     </div>

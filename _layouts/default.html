@@ -8,6 +8,7 @@
   <title>{{page.title}}</title>
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
   <script src="https://kit.fontawesome.com/91edf3382d.js" crossorigin="anonymous"></script>
+  <script defer src="assets/js/wecare.js"></script>
   <link rel="stylesheet" href="../css/bulma-divider.min.css">
 
   <style>
@@ -20,41 +21,7 @@
 
 <body>
   <!-- START NAV -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="../">
-          <img src="../assets/images/logo.png" alt="Logo"><b class="is-size-5 has-text-weight-semibold">WeCare Community</b>
-        </a>
-        <span class="navbar-burger burger" data-target="navbarMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </div>
-      <div id="navbarMenu" class="navbar-menu">
-        <div class="navbar-end">
-          <div class=" navbar-item">
-            <div class="control has-icons-left">
-              <input class="input is-rounded" type="email" placeholder="How can i help?">
-              <span class="icon is-left">
-                <i class="fa fa-search"></i>
-              </span>
-            </div>
-          </div>
-          <a class="navbar-item is-active is-size-5 has-text-weight-semibold">
-            Home
-          </a>
-          <a class="navbar-item is-size-5 has-text-weight-semibold">
-            Care Box
-          </a>
-          <a class="navbar-item is-size-5 has-text-weight-semibold">
-            Corona Care
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
+    {% include nav.html %}
   <!-- END NAV -->
 
   <!-- Image -->
@@ -68,117 +35,61 @@
             </figure>
           </div>
         </div>
-
         <section class="section">
           <div class="columns">
             <div class="column is-8 is-offset-2">
               <div class="content is-medium">
-                <h2 class="subtitle is-4">December 25, 2018</h2>
-                <h1 class="title">Getting Started</h1>
-                <p>This is a starter template for creating a beautiful, customizable blog with minimal
-                  effort. You’ll only have to change a few settings and you’re ready to go. As with all Jigsaw sites,
-                  configuration settings can be found in config</p>
+                <h2 class="subtitle is-4">March 27, 2020</h2>
+                <h1 class="title" id="corona">Couch Community Service v0.1</h1>
+                <p>We have access to a lot of information and with the global nature of this crisis, we are increasingly becoming aware of our individual responsibility in the connected world — be it a pandemic or other imminent dangers like an environmental crisis.<a href="">Read More</a></p>
               </div>
             </div>
           </div>
         </section>
-
-        <div class="is-divider"></div>
-
+          <!-- newsletter -->
         <section class="section">
           <div class="columns">
-            <div class="column is-8 is-offset-2">
-              <div class="content is-medium">
-                <h2 class="subtitle is-4">December 25, 2018</h2>
-                <h1 class="title">Getting Started</h1>
-                <p>This is a starter template for creating a beautiful, customizable blog with minimal
-                  effort. You’ll only have to change a few settings and you’re ready to go. As with all Jigsaw sites,
-                  configuration settings can be found in config</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-      </div>
-    </div>
-  </section>
-
-  <!-- newsletter -->
-  <section class="section">
-    <div class="columns">
-      <div class="column is-10 is-offset-1">
-        <div class="container has-text-centered is-fluid">
-          <div class="hero is-light">
-            <div class="hero-body">
-              <h2 class="title is-4">Sign up To Help</h1>
-                <div class="column is-8 is-offset-2">
-                    {% include helpform.html %}
+            <div class="column is-10 is-offset-1">
+              <div class="container has-text-centered is-fluid">
+                <div class="hero is-light">
+                  <div class="hero-body">
+                    <h2 class="title is-4">Join The Mutual Aid Effort</h1>
+                      <div class="column is-8 is-offset-2">
+                          {% include helpform.html %}
+                      </div>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   </section>
 
-  <!-- Articles -->
-
+  <hr/>
   <section class="hero ">
     <div class="hero-body">
       <div class="container">
-
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <figure class="image is-1by1">
+              <img src="../assets/images/carebox.png" alt="">
+            </figure>
+          </div>
+        </div>
+        <hr/>
         <section class="section">
-          <div class="columns is-variable is-8">
-            <div class="column is-5 is-offset-1 ">
+          <div class="columns">
+            <div class="column is-8 is-offset-2">
               <div class="content is-medium">
-                <h2 class="subtitle is-5 has-text-grey">December 23, 2018</h2>
-                <h1 class="title has-text-black is-3">Custom 404 Pages</h1>
-                <p class="has-text-dark">This starter template includes a custom 404 Not Found error page, located at
-                  /source/404.blade.php.
-                  To preview the 404 page, you can visit /404 in your browser. Depending...</p>
-              </div>
-            </div>
-            <div class="column is-5">
-              <div class="content is-medium">
-                <h2 class="subtitle is-5 has-text-grey">December 25, 2018</h2>
-                <h1 class="title has-text-black is-3">Fuse Search</h1>
-                <p class="has-text-dark">To provide fast, local search of your blog, this starter template comes with a
-                  pre-built Vue.js
-                  component that uses Fuse.js. Fuse.js is a "lightweight fuzzy-search library with no...</p>
+                <h2 class="subtitle is-4">June 17, 2019</h2>
+                <h1 class="title" id="carebox">WeCare Community CareBoxes</h1>
+                <p>As part of UCSF Mental Health Hackathon, we created a carebox which enables local community to engage citizens to solve problems related to mental health with more tactile and immediate physcial presence. <a href="https://medium.com/hackmentalhealth/cards-for-humanity-we-care-community-mental-health-careboxes-2adf3ce9541">Read More</a></p>
               </div>
             </div>
           </div>
         </section>
-
-        <div class="is-divider"></div>
-
-        <section class="section">
-          <div class="columns is-variable is-8">
-            <div class="column is-5 is-offset-1">
-              <div class="content is-medium">
-                <h2 class="subtitle is-5 has-text-grey">December 25, 2018</h2>
-                <h1 class="title has-text-black is-3">Getting Started</h1>
-                <p class="has-text-dark">This is a starter template for creating a beautiful, customizable blog with
-                  minimal
-                  effort. You’ll only have to change a few settings and you’re ready to go. As with all Jigsaw sites,
-                  configuration settings can be found in config</p>
-              </div>
-            </div>
-            <div class="column is-5">
-              <div class="content is-medium">
-                <h2 class="subtitle is-5 has-text-grey">December 25, 2018</h2>
-                <h1 class="title has-text-black is-3">Getting Started</h1>
-                <p class="has-text-dark">This is a starter template for creating a beautiful, customizable blog with
-                  minimal
-                  effort. You’ll only have to change a few settings and you’re ready to go. As with all Jigsaw sites,
-                  configuration settings can be found in config</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
       </div>
     </div>
   </section>
@@ -186,7 +97,8 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        <strong>WeCare Community</strong>. Code by <a href="https://www.vitraag.com">Vaibhav Bhandari</a>.
+        <strong>WeCare Community</strong>. 
+        <br>Code by <a href="https://www.vitraag.com">Vaibhav Bhandari</a>.
       </p>
     </div>
   </footer>

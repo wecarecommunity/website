@@ -2,3 +2,6 @@
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+exclude: [Gemfile, Gemfile.lock, package.json, package-lock.json]
+include: [_pages]
