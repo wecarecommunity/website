@@ -7,8 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{page.title}}</title>
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/91edf3382d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/bulma-divider.min.css">
 
   <style>
@@ -112,18 +111,9 @@
         <div class="container has-text-centered is-fluid">
           <div class="hero is-light">
             <div class="hero-body">
-              <h2 class="title is-4">Sign up for our newsletter</h1>
-                <div class="column is-6 is-offset-3">
-                  <div class="field has-addons has-addons-centered">
-                    <div class="control is-expanded">
-                      <input class="input " type="text" placeholder="Email address">
-                    </div>
-                    <div class="control">
-                      <a class="button is-info">
-                        Subscribe
-                      </a>
-                    </div>
-                  </div>
+              <h2 class="title is-4">Sign up To Help</h1>
+                <div class="column is-8 is-offset-2">
+                    {% include helpform.html %}
                 </div>
             </div>
           </div>
