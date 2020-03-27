@@ -117,7 +117,7 @@
 <div class="field">
     <div class="field">
         <p class="control has-icons-left">
-          <input class="input" type="text" placeholder="First Last Name">
+          <input class="input" type="text" name="name" placeholder="First Last Name">
           <span class="icon is-small is-left">
             <i class="fas fa-person"></i>
           </span>
@@ -126,7 +126,7 @@
   
   <div class="field">
     <p class="control has-icons-left has-icons-right">
-      <input class="input" type="email" placeholder="Email">
+      <input class="input" type="email" name="email" placeholder="Email">
       <span class="icon is-small is-left">
         <i class="fas fa-envelope"></i>
       </span>
@@ -138,7 +138,7 @@
    <div class="field">
         <p class="control has-icons-left">
         <span class="select">
-            <select>
+            <select name="objective">
             <option selected>Objective</option>
             <option>Need Help</option>
             <option>Can Help</option>
@@ -153,7 +153,7 @@
   <div class="field">
     <label class="label">Message</label>
     <div class="control">
-      <textarea class="textarea" placeholder="Detailed message"></textarea>
+      <textarea class="textarea" name="message" placeholder="Detailed message"></textarea>
     </div>
   </div>
   <div data-netlify-recaptcha="true"></div>
@@ -165,7 +165,7 @@
       </label>
     </div>
   </div>
-  
+
   <div class="field is-grouped">
     <div class="control">
       <button class="button is-link">Submit</button>
